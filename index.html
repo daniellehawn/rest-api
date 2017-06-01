@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Internal Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Favorite Football Team</title>
+  </head>
+<body>
+
+<div class="container-fluid">
+  <header>
+      <h1>Tracking Favorite Football Teams</h1>
+  </header>
+  
+    <div><button id="showFootball" class="btn">Add Your Favorite Team</button></div>
+      <table id="football-data" class="table table-sm">
+        <thead class="thead-inverse">
+          <tr>
+            <th>Name</th><th>Favorite Team</th><th>Favorite Player</th>
+          </tr>
+        </thead>
+        <tbody id="build-tbody">
+        </tbody>
+      </table>
+
+  <section>
+    <div id="hide-form" class="container">
+    <h4>Input your Favorite Football Team/Player</h4>
+    <form name="addFootball" id="addFootball">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Name:</label>
+        <div class="col-sm-10">
+          <input type="text" id="input-name" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Team Name:</label>
+        <div class="col-sm-10">
+          <input type="text" id="input-team" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Player:</label>
+        <div class="col-sm-10">
+          <input type="text" id="input-player" class="form-control">
+        </div>
+      </div>
+      <br>
+      <div>
+      <button class="btn btn-primary" id="submit-button">Submit</button>
+      <button class="btn btn-primary" id="cancel-button">Cancel</button>
+      </div>        
+    </form>
+    </div>
+          <h2>Response</h2>
+      <pre id="response"></pre>
+    
+          <h2>Read List</h2>
+      <form>
+        <button type="button" id="read-list">Read List</button>
+      </form>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+  </div>
+  </body>
+</html>
